@@ -64,7 +64,11 @@ function App() {
   });
   setRask(rr);
   }
-  const handlers={done, nikla, again};
+  const clear = (event) => {
+    event.stopPropagation();
+    setRask(task);
+  }
+  const handlers={done, nikla, again, clear};
   
   const handlerAddThing = (value) => {
     let r = rask;

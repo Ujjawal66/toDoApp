@@ -62,12 +62,20 @@ span {
   background-color: var(--color-grey-dark);
   color: var(--white);
 }
+&>span>em.def {
+  border-radius: 0.5rem;
+  width: 5rem; 
+  margin-left: auto;
+  &:hover {
+    background-color: var(--color-dark);
+  }
+}
 ul{
   height: 0;
 }
 `
 
-const TaskList = ({list, done, nikla, again}) => {
+const TaskList = ({list, done, nikla, again, clear}) => {
   const com=list.reduce((t,index)=>{
     return index.completed ? t+1:t;
   },0);
@@ -75,7 +83,7 @@ const TaskList = ({list, done, nikla, again}) => {
   const [d2, setD2] = useState(true);
   return (
     <Main>
-      <span onClick={() => setD1(!d1)}>INBOX {d1?<i className="fa-solid fa-chevron-down"></i>:<i className="fa-solid fa-chevron-up"></i>}</span>
+      <span onClick={() => setD1(!d1)}>INBOX {d1?<i className="fa-solid fa-chevron-down"></i>:<i className="fa-solid fa-chevron-up"></i>} <em className="def" onClick={clear}>DEFAULT</em></span>
       <List list={list} complete={false} done={done} nikla={nikla} down={d1}/>
       <span onClick={() => setD2(!d2)}>COMPLETED <em>{com}</em>
         {d2?<i className="fa-solid fa-chevron-down"></i>:<i className="fa-solid fa-chevron-up"></i>}
