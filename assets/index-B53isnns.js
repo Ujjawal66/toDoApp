@@ -66,7 +66,6 @@ color: var(--white);
   height: 100%;
   width: 100%;
   background: no-repeat bottom/cover url('blue-mountain.jpg') var(--color-dark);
-  z-index: -10;
 }
 
 .bgimg::after {
@@ -98,6 +97,7 @@ color: var(--white);
   }
 }
 .left {
+  z-index:0;
   display: flex;
   flex-direction: column;
   padding: 1.7rem;
