@@ -126,7 +126,7 @@ color: var(--white);
     align-items: center;
   }
 }
-`,Km=({personal:e=0,business:t=0,per_complete:n=0})=>{let o="Jan Feb Mar Apr May June July Aug Sep Oct Nov Dec".split(" ")[new Date().getMonth()],i=new Date().getDate(),u=new Date().getFullYear();return x.jsxs(Ym,{children:[x.jsx("div",{className:"bgimg"}),x.jsxs("div",{className:"right",children:[x.jsx("h1",{children:"Your Things"}),x.jsxs("span",{children:[o," ",i,", ",u]})]}),x.jsxs("div",{className:"left",children:[x.jsxs("div",{children:[x.jsxs("p",{children:[e,x.jsx("span",{children:"Personal"})]}),x.jsxs("p",{children:[t,x.jsx("span",{children:"Business"})]})]}),x.jsxs("span",{children:[x.jsx(Qm,{percent:n}),n," done"]})]})]})},Gm=xe.div`
+`,Km=({personal:e=0,business:t=0,per_complete:n=0})=>{let o="Jan Feb Mar Apr May June July Aug Sep Oct Nov Dec".split(" ")[new Date().getMonth()],i=new Date().getDate(),u=new Date().getFullYear();return x.jsxs(Ym,{children:[x.jsx("div",{className:"bgimg"}),x.jsxs("div",{className:"right",children:[x.jsx("h1",{children:"Your Things"}),x.jsxs("span",{children:[o," ",i,", ",u]})]}),x.jsxs("div",{className:"left",children:[x.jsxs("div",{children:[x.jsxs("p",{children:[e,x.jsx("span",{children:"Personal"})]}),x.jsxs("p",{children:[t,x.jsx("span",{children:"Business"})]})]}),x.jsxs("span",{children:[x.jsx(Qm,{percent:n}),n,"% done"]})]})]})},Gm=xe.div`
   position: fixed;
   z-index: 100;
   width: 3.5rem;
