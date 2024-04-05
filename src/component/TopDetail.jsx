@@ -98,7 +98,7 @@ const TopDetail = ({personal=0, business=0, per_complete=0}) => {
           <p>{personal}<span>Personal</span></p>
           <p>{business}<span>Business</span></p>
         </div>
-        <span><Progress percent={per_complete}/>{per_complete} done</span>
+        <span><Progress percent={per_complete}/>{per_complete}% done</span>
       </div>
     </Showoff>
   )
