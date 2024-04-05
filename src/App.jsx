@@ -81,7 +81,7 @@ function App() {
   });
 
   return (
-    <>
+    <><div id="ko">
       {
         addingTask? <NewForm back={back} onAdd={handlerAddThing}/>:
         <div>
@@ -89,7 +89,7 @@ function App() {
         <TopDetail personal={personal} business={business} per_complete={percent}/>
         <TaskList list={rask} {...handlers}/>
         </div>
-      }
+      }</div>
     </>
   )
 }
